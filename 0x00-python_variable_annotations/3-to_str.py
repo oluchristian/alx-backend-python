@@ -1,4 +1,7 @@
 #!/usr/bin/env python3
+"""
+Basic to_str
+"""
 
 
 def to_str(n: float) -> str:

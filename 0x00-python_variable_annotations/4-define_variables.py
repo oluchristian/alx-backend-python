@@ -1,4 +1,7 @@
 #!/usr/bin/env python3
+"""
+Basic annotations - floor
+"""
 
 
 a: int = 1
