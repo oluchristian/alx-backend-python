@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 
-"""This module provides a function to sum a list of ints and floats.
+"""This module provides a function to take
+    a string and float to return a tuple.
 """
 
 from typing import Tuple, Union
