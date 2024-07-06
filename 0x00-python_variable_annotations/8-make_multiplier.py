@@ -1,13 +1,17 @@
 #!/usr/bin/env python3
-
-"""This module provides a function to multiply
-    a float.
 """
+Complex types - functions
+"""
+from typing import Callable
 
-from typing import Tuple, Union
 
-
-def make_multiplier(multiplier: float) -> Tuple[str, float]:
-    """a function that takes a float multiplier as argument and
-        returns a function that multiplies a float by multiplier
+def make_multiplier(multiplier: float) -> Callable[[float], float]:
     """
+    return a function that multiplies a float
+    """
+    def multiplies(n: float):
+        """
+        multiply two number
+        """
+        return n * multiplier
+    return multiplies
