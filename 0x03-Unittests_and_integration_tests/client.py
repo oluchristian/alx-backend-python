@@ -14,7 +14,7 @@ from utils import (
 
 
 class GithubOrgClient:
-    """A Github org client
+    """A Githib org client
     """
     ORG_URL = "https://api.github.com/orgs/{org}"
 
@@ -52,10 +52,7 @@ class GithubOrgClient:
         """Static: has_license"""
         assert license_key is not None, "license_key cannot be None"
         try:
-            has_license = access_nested_map(
-                repo,
-                ("license", "key"),
-            ) == license_key
+            has_license = access_nested_map(repo, ("license", "key")) == license_key
         except KeyError:
             return False
         return has_license
